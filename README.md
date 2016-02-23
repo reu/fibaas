@@ -14,9 +14,10 @@ fib n = fib (n - 1) + fib (n - 2)
 | Framework      | Requests/sec  | Total requests | Avg Latency | Memory footprint |
 |----------------|---------------|----------------|-------------|------------------|
 | Scotty         | 50,048        | 1,502,738      | 2.90ms      | **26MB**         |
-| Spock          | **57,416**    | **1,724,062**  | **2.57ms**  | 28MB             |
+| Spock          | 57,416        | 1,724,062      | 2.57ms      | 28MB             |
 | Snap           | 23,756        | 715,166        | 7.11ms      | 33MB             |
 | Happstack Lite | 7,888         | 237,474        | 8.11ms      | 34MB             |
+| Apiary         | **69,056**    | **2,076,808**  | **2.33ms**  | 30MB             |
 
 # Building
 
@@ -33,6 +34,7 @@ Following are the WEB frameworks we are benchmarking:
 * [Spock](https://github.com/agrafix/Spock)
 * [Snap](https://github.com/snapframework/snap)
 * [Happstack Lite](https://github.com/Happstack/happstack-lite)
+* [Apiary](https://github.com/philopon/apiary)
 
 All the exectuables are built with maximum optimization, concurrency support, and a increased GC allocation size, as the GHC default's (512 Kb) is pretty unrealistic for production servers. Consult the `fibaas.cabal` file for details.
 
@@ -115,3 +117,23 @@ main = do
 ```
 
     $ ./dist/build/fibaas-happstack/fibaas-happstack
+
+### Apiary
+
+```haskell
+{-# LANGUAGE QuasiQuotes #-}
+{-# LANGUAGE DataKinds #-}
+
+import Fibonacci
+import Web.Apiary
+import Network.Wai.Handler.Warp
+
+main :: IO ()
+main =
+  runApiary (run 4000) def $
+    [capture|/number::Int|] . method GET . action $ do
+      number <- param [key|number|]
+      showing $ fib number
+```
+
+    $ ./dist/build/fibaas-apiary/fibaas-apiary
