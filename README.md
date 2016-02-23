@@ -15,11 +15,12 @@ Running on a Retina Macbook Pro i5@2.6GHz and 8GB RAM using [wrk](https://github
 
     $ wrk -c 64 -d 30s http://localhost:4000/10
 
-| Framework | Requests/sec | Total requests | Avg Latency | Memory footprint |
-|-----------|--------------|----------------|-------------|------------------|
-| Scotty    | 50048        | 1502738        | 2.90ms      | **26MB**         |
-| Spock     | **57416**    | **1724062**    | **2.57ms**  | 28MB             |
-| Snap      | 23756        | 715166         | 7.11ms      | 33MB             |
+| Framework      | Requests/sec | Total requests | Avg Latency | Memory footprint |
+|----------------|--------------|----------------|-------------|------------------|
+| Scotty         | 50048        | 1502738        | 2.90ms      | **26MB**         |
+| Spock          | **57416**    | **1724062**    | **2.57ms**  | 28MB             |
+| Snap           | 23756        | 715166         | 7.11ms      | 33MB             |
+| Happstack Lite | 7888         | 237474         | 8.11ms      | 34MB             |
 
 # Building
 
@@ -35,6 +36,7 @@ Following are the WEB frameworks we are benchmarking:
 * [Scotty](https://github.com/scotty-web/scotty)
 * [Spock](https://github.com/agrafix/Spock)
 * [Snap](https://github.com/snapframework/snap)
+* [Happstack Lite](https://github.com/Happstack/happstack-lite)
 
 All the exectuables are built with maximum optimization, concurrency support, and a increased GC allocation size, as the GHC default's (512 Kb) is pretty unrealistic for production servers. Consult the `fibaas.cabal` file for details.
 
@@ -97,3 +99,19 @@ main = do
 ```
 
     $ ./dist/build/fibaas-snap/fibaas-snap
+
+### Happstack Lite
+
+```haskell
+import Fibonacci
+import Happstack.Lite
+
+main :: IO ()
+main = do
+  let config = defaultServerConfig { port = 4000 }
+  serve (Just config) $
+    path $ \(number) ->
+      ok . toResponse . show . fib $ number
+```
+
+    $ ./dist/build/fibaas-happstack/fibaas-happstack
