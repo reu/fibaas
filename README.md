@@ -19,6 +19,7 @@ Running on a Retina Macbook Pro i5@2.6GHz and 8GB RAM using [wrk](https://github
 |-----------|--------------|----------------|-------------|------------------|
 | Scotty    | 50048        | 1502738        | 2.90ms      | **26MB**         |
 | Spock     | **57416**    | **1724062**    | **2.57ms**  | 28MB             |
+| Snap      | 23756        | 715166         | 7.11ms      | 33MB             |
 
 # Building
 
@@ -29,9 +30,13 @@ Running on a Retina Macbook Pro i5@2.6GHz and 8GB RAM using [wrk](https://github
 
 # Running
 
-We are benchmarking two minimalist WEB frameworks: [Scotty](https://github.com/scotty-web/scotty) and [Spock](https://github.com/agrafix/Spock)
+Following are the WEB frameworks we are benchmarking:
 
-Both exectuables are built with maximum optimization, concurrency support, and a increased GC allocation size, as the GHC default's (512 Kb) is pretty unrealistic for production servers. Consult the `fibaas.cabal` file for details.
+* [Scotty](https://github.com/scotty-web/scotty)
+* [Spock](https://github.com/agrafix/Spock)
+* [Snap](https://github.com/snapframework/snap)
+
+All the exectuables are built with maximum optimization, concurrency support, and a increased GC allocation size, as the GHC default's (512 Kb) is pretty unrealistic for production servers. Consult the `fibaas.cabal` file for details.
 
 ### Scotty
 
@@ -64,3 +69,31 @@ main = runSpock 4000 $ spockT id $
 ```
 
     $ ./dist/build/fibaas-spock/fibaas-spock
+
+### Snap
+
+```haskell
+import Fibonacci
+import Snap.Core
+import Snap.Http.Server
+import Data.ByteString.Char8 (pack, unpack)
+
+fibHandler :: Snap ()
+fibHandler = do
+  Just param <- getParam "number"
+  let number = read $ unpack param :: Int
+      result = fib number in
+    writeBS . pack . show $ result
+
+main :: IO ()
+main = do
+  let config = setPort 4000 $
+               setAccessLog ConfigNoLog $
+               setErrorLog ConfigNoLog
+               defaultConfig
+
+  httpServe config $
+    route [("/:number", fibHandler)]
+```
+
+    $ ./dist/build/fibaas-snap/fibaas-snap

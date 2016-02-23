@@ -26,3 +26,14 @@ executable fibaas-spock
   build-depends:       base,
                        text,
                        Spock
+
+executable fibaas-snap
+  main-is:             Snap.hs
+  default-language:    Haskell2010
+  default-extensions:  OverloadedStrings
+  hs-source-dirs:      src
+  ghc-options:         -Wall -O2 -threaded -rtsopts "-with-rtsopts=-N -A4M"
+  build-depends:       base,
+                       bytestring,
+                       snap-core,
+                       snap-server
