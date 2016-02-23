@@ -15,6 +15,7 @@ fib n = fib (n - 1) + fib (n - 2)
 |----------------|---------------|----------------|-------------|------------------|
 | Apiary         | **69,056**    | **2,076,808**  | **2.33ms**  | 30MB             |
 | Spock          | 57,416        | 1,724,062      | 2.57ms      | 28MB             |
+| Simple         | 56,104        | 1,684,709      | 2.70ms      | 28MB             |
 | Scotty         | 50,048        | 1,502,738      | 2.90ms      | **26MB**         |
 | Snap           | 23,756        | 715,166        | 7.11ms      | 33MB             |
 | Happstack Lite | 7,888         | 237,474        | 8.11ms      | 34MB             |
@@ -33,6 +34,7 @@ Following are the WEB frameworks we are benchmarking:
 * [Apiary](https://github.com/philopon/apiary)
 * [Happstack Lite](https://github.com/Happstack/happstack-lite)
 * [Scotty](https://github.com/scotty-web/scotty)
+* [Simple](https://github.com/alevy/simple)
 * [Snap](https://github.com/snapframework/snap)
 * [Spock](https://github.com/agrafix/Spock)
 
@@ -93,6 +95,26 @@ main = scotty 4000 $
 ```
 
     $ ./dist/build/fibaas-scotty/fibaas-scotty
+
+### Simple
+
+```haskell
+import Fibonacci
+import Web.Simple
+import Web.Frank
+import Network.Wai.Handler.Warp
+import Data.ByteString.Lazy.Char8 (pack)
+import Data.ByteString.Char8 (unpack)
+
+main :: IO ()
+main = run 4000 $ controllerApp () $
+  get "/:number" $ do
+    param <- queryParam' "number"
+    let number = read $ unpack param :: Int in
+      respond $ ok "text/plain" $ pack . show . fib $ number
+```
+
+    $ ./dist/build/fibaas-simple/fibaas-simple
 
 ### Snap
 
