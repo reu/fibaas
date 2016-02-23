@@ -11,10 +11,6 @@ fib n = fib (n - 1) + fib (n - 2)
 
 # Results
 
-Running on a Retina Macbook Pro i5@2.6GHz and 8GB RAM using [wrk](https://github.com/wg/wrk):
-
-    $ wrk -c 64 -d 30s http://localhost:4000/10
-
 | Framework      | Requests/sec  | Total requests | Avg Latency | Memory footprint |
 |----------------|---------------|----------------|-------------|------------------|
 | Scotty         | 50,048        | 1,502,738      | 2.90ms      | **26MB**         |
@@ -39,6 +35,10 @@ Following are the WEB frameworks we are benchmarking:
 * [Happstack Lite](https://github.com/Happstack/happstack-lite)
 
 All the exectuables are built with maximum optimization, concurrency support, and a increased GC allocation size, as the GHC default's (512 Kb) is pretty unrealistic for production servers. Consult the `fibaas.cabal` file for details.
+
+The tests were run on a Retina Macbook Pro i5@2.6GHz and 8GB RAM using [wrk](https://github.com/wg/wrk):
+
+    $ wrk -c 64 -d 30s http://localhost:4000/10
 
 ### Scotty
 
