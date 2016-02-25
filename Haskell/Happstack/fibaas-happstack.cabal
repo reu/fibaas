@@ -1,0 +1,15 @@
+name:                fibaas-happstack
+version:             0.1.0.0
+license:             MIT
+author:              Rodrigo Navarro
+maintainer:          rnavarro@rnavarro.com.br
+category:            Experiment
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable fibaas-happstack
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  ghc-options:         -Wall -O2 -threaded -rtsopts "-with-rtsopts=-N -A4M"
+  build-depends:       base,
+                       happstack-lite==7.3.6

@@ -1,7 +1,11 @@
-import Fibonacci
 import Snap.Core
 import Snap.Http.Server
 import Data.ByteString.Char8 (pack, unpack)
+
+fib :: Int -> Int
+fib 0 = 0
+fib 1 = 1
+fib n = fib (n - 1) + fib (n - 2)
 
 fibHandler :: Snap ()
 fibHandler = do
