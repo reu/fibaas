@@ -11,14 +11,15 @@ fib n = fib (n - 1) + fib (n - 2)
 
 # Results
 
-| Framework      | Requests/sec  | Total requests | Avg Latency | Memory footprint |
-|----------------|---------------|----------------|-------------|------------------|
-| Apiary         | **69,056**    | **2,076,808**  | **2.33ms**  | 30MB             |
-| Spock          | 57,416        | 1,724,062      | 2.57ms      | 28MB             |
-| Simple         | 56,104        | 1,684,709      | 2.70ms      | 28MB             |
-| Scotty         | 50,048        | 1,502,738      | 2.90ms      | **26MB**         |
-| Snap           | 23,756        | 715,166        | 7.11ms      | 33MB             |
-| Happstack Lite | 7,888         | 237,474        | 8.11ms      | 34MB             |
+| Language | Framework      | Requests/sec  | Total requests | Avg Latency | Memory footprint |
+| -------- |----------------|---------------|----------------|-------------|------------------|
+| Haskell  | Apiary         | **69,056**    | **2,076,808**  | **2.33ms**  | 30MB             |
+| Haskell  | Spock          | 57,416        | 1,724,062      | 2.57ms      | 28MB             |
+| Haskell  | Simple         | 56,104        | 1,684,709      | 2.70ms      | 28MB             |
+| Haskell  | Scotty         | 50,048        | 1,502,738      | 2.90ms      | **26MB**         |
+| Haskell  | Snap           | 23,756        | 715,166        | 7.11ms      | 33MB             |
+| Haskell  | Happstack Lite | 7,888         | 237,474        | 8.11ms      | 34MB             |
+| Ruby     | Rails          | 2,334         | 70,108         | 6.86ms      |                  |
 
 # Running
 
