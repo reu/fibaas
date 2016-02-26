@@ -23,6 +23,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Go       | Gorilla        | 46,729        | 1,402,482      | 2.77ms      |                  |
 | Haskell  | Snap           | 23,756        | 715,166        | 7.11ms      | 33MB             |
 | Node.JS  | Express        | 22,696        | 683,177        | 3.15ms      |                  |
+| Java     | Jersey         | 22,506        | 677,301        | 2.45ms      |                  |
 | Node.JS  | Restify        | 21,296        | 641,021        | 3.27ms      |                  |
 | Elixir   | Phoenix        | 18,624        | 559,225        | 5.90ms      |                  |
 | Haskell  | Happstack Lite | 7,888         | 237,474        | 8.11ms      | 34MB             |
