@@ -8,7 +8,7 @@ if (cluster.isMaster) {
     switch (n) {
       case 0: return 0
       case 1: return 1
-      default: return fibonacci(n - 1) + fibonacci(n - 2);
+      default: return fib(n - 1) + fib(n - 2);
     }
   }
 
@@ -16,7 +16,7 @@ if (cluster.isMaster) {
   var app = restify.createServer();
 
   app.get("/:number", function(req, res) {
-    res.end(fibonacci(req.params.number).toString());
+    res.end(fib(req.params.number).toString());
   });
 
   app.listen(4000);
