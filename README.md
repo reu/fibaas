@@ -20,6 +20,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Haskell  | Snap           | 23,756        | 715,166        | 7.11ms      | 33MB             |
 | Node.JS  | Express        | 22,696        | 683,177        | 3.15ms      |                  |
 | Node.JS  | Restify        | 21,296        | 641,021        | 3.27ms      |                  |
+| Elixir   | Phoenix        | 18,624        | 559,225        | 5.90ms      |                  |
 | Haskell  | Happstack Lite | 7,888         | 237,474        | 8.11ms      | 34MB             |
 | Ruby     | Roda           | 7,537         | 22,6137        | 2.12ms      |                  |
 | Ruby     | Sinatra        | 2,667         | 80,134         | 5.99ms      |                  |
