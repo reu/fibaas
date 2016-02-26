@@ -19,6 +19,8 @@ fib n = fib (n - 1) + fib (n - 2)
 | Haskell  | Scotty         | 50,048        | 1,502,738      | 2.90ms      | **26MB**         |
 | Haskell  | Snap           | 23,756        | 715,166        | 7.11ms      | 33MB             |
 | Haskell  | Happstack Lite | 7,888         | 237,474        | 8.11ms      | 34MB             |
+| Ruby     | Roda           | 7,537         | 22,6137        | 2.12ms      |                  |
+| Ruby     | Sinatra        | 2,667         | 80,134         | 5.99ms      |                  |
 | Ruby     | Rails          | 2,334         | 70,108         | 6.86ms      |                  |
 
 # Running
