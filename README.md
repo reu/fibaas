@@ -16,8 +16,11 @@ fib n = fib (n - 1) + fib (n - 2)
 | Haskell  | Apiary         | **69,056**    | **2,076,808**  | 2.33ms      | 30MB             |
 | Haskell  | Spock          | 57,416        | 1,724,062      | 2.57ms      | 28MB             |
 | Haskell  | Simple         | 56,104        | 1,684,709      | 2.70ms      | 28MB             |
+| Go       | Gin            | 55,943        | 1,679,347      | **1.17ms**  |                  |
 | Haskell  | Scotty         | 50,048        | 1,502,738      | 2.90ms      | **26MB**         |
-| Java     | Spark          | 47,061        | 1,412,082      | **1.38ms**  |                  |
+| Go       | Pat            | 48,128        | 1,447,483      | 2.43ms      |                  |
+| Java     | Spark          | 47,061        | 1,412,082      | 1.38ms      |                  |
+| Go       | Gorilla        | 46,729        | 1,402,482      | 2.77ms      |                  |
 | Haskell  | Snap           | 23,756        | 715,166        | 7.11ms      | 33MB             |
 | Node.JS  | Express        | 22,696        | 683,177        | 3.15ms      |                  |
 | Node.JS  | Restify        | 21,296        | 641,021        | 3.27ms      |                  |
