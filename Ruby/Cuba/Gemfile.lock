@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    cuba (3.5.0)
+      rack (~> 1.6.0)
+    puma (3.0.0)
+    rack (1.6.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cuba
+  puma
