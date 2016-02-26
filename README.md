@@ -27,18 +27,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Ruby     | Sinatra        | 2,667         | 80,134         | 5.99ms      |                  |
 | Ruby     | Rails          | 2,334         | 70,108         | 6.86ms      |                  |
 
-# Running
-
-Following are the WEB frameworks we are benchmarking:
-
-* [Apiary](https://github.com/philopon/apiary)
-* [Happstack Lite](https://github.com/Happstack/happstack-lite)
-* [Scotty](https://github.com/scotty-web/scotty)
-* [Simple](https://github.com/alevy/simple)
-* [Snap](https://github.com/snapframework/snap)
-* [Spock](https://github.com/agrafix/Spock)
-
-All the exectuables are built with maximum optimization, concurrency support, and a increased GC allocation size, as the GHC default's (512 Kb) is pretty unrealistic for production servers. Consult the `fibaas.cabal` file for details.
+# Methodology
 
 The tests were run on a Retina Macbook Pro i5@2.6GHz and 8GB RAM using [wrk](https://github.com/wg/wrk):
 
