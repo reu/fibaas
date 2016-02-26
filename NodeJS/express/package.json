@@ -1,0 +1,14 @@
+{
+  "name": "express-benchmark",
+  "version": "1.0.0",
+  "description": "Express.JS Fibonacci benchmark",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Rodrigo Navarro <rnavarro@rnavarro.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
