@@ -18,8 +18,8 @@ fib n = fib (n - 1) + fib (n - 2)
 | Haskell  | Apiary         | **69,056**    | **2,076,808**  | 2.33ms      |
 | Go       | Gin            | 55,943        | 1,679,347      | **1.17ms**  |
 | Java     | Spark          | 47,061        | 1,412,082      | 1.38ms      |
+| Elixir   | Sugar          | 22,813        | 685,273        | 3.83ms      |
 | Node.JS  | Express        | 22,696        | 683,177        | 3.15ms      |
-| Elixir   | Phoenix        | 18,624        | 559,225        | 5.90ms      |
 | Ruby     | Roda           | 7,537         | 22,6137        | 2.12ms      |
 
 ## Full ranking
@@ -35,6 +35,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Java     | Spark          | 47,061        | 1,412,082      | 1.38ms      |
 | Go       | Gorilla        | 46,729        | 1,402,482      | 2.77ms      |
 | Haskell  | Snap           | 23,756        | 715,166        | 7.11ms      |
+| Elixir   | Sugar          | 22,813        | 685,273        | 3.83ms      |
 | Node.JS  | Express        | 22,696        | 683,177        | 3.15ms      |
 | Java     | Jersey         | 22,506        | 677,301        | 2.45ms      |
 | Node.JS  | Restify        | 21,296        | 641,021        | 3.27ms      |
@@ -54,6 +55,7 @@ Alphabetical order
 
 | Framework      | Requests/sec  | Total requests | Avg Latency |
 |----------------|---------------|----------------|-------------|
+| Sugar          | 22,813        | 685,273        | 3.83ms      |
 | Phoenix        | 18,624        | 559,225        | 5.90ms      |
 
 ### Go
