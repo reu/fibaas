@@ -3,12 +3,11 @@
             [clojure.string :as s])
   (:gen-class))
 
-(def infinite-fibs
-  (map first
-       (iterate (fn [[a b]] [b (+ a b)])
-                [0 1])))
-
-(def fib (partial nth infinite-fibs))
+(defn fib [n]
+  (case n
+    0 0
+    1 1
+    (+ (fib (- n 1)) (fib (- n 2)))))
 
 (defn app [req]
   ;; `Integer/parseInt` is a little faster than `read-string`
