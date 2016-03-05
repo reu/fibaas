@@ -14,8 +14,8 @@
 (defroutes fib-routes
   (GET "/:num" [num]
     (let [n (read-string num)]
-      (str "Clojure + http-kit + compojure<hr>fib(" n "): " (fib n)))))
+      (str (fib n)))))
 
 (defn -main [& args]
   (h/run-server (handler/site #'fib-routes)
-                {:port 8080}))
+                {:port 4000}))

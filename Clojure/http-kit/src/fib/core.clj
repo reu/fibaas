@@ -14,7 +14,7 @@
   (let [n (Integer/parseInt (s/replace (:uri req) "/" ""))]
     {:status  200
      :headers {"Content-Type" "text/html"}
-     :body    (str "Clojure + http-kit<hr>fib(" n "): " (fib n))}))
+     :body    (str (fib n))}))
 
 (defn -main [& args]
-  (h/run-server app {:port 8080}))
+  (h/run-server app {:port 4000}))
