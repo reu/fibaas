@@ -108,3 +108,8 @@ Alphabetical order
 The tests were run on a Retina Macbook Pro i5@2.6GHz and 8GB RAM using [wrk](https://github.com/wg/wrk):
 
     $ wrk -c 64 -d 30s http://localhost:4000/10
+
+# Thanks
+
+- [Wagner Amaral](https://github.com/wamaral) for providing Clojure and Compjure applications
+- [Daniel Konishi](https://github.com/dkonishi) for pointing out that Elixir tests should be made with `MIX_ENV=production`
