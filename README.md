@@ -21,6 +21,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Clojure  | Compojure + HTTP Kit | 38,902        | 1,170,991      | 1.66ms      |
 | Elixir   | Sugar                | 22,813        | 685,273        | 3.83ms      |
 | Node.JS  | Express              | 22,696        | 683,177        | 3.15ms      |
+| Scala    | Akka HTTP            | 13,141        | 394,707        | 14.47ms     |
 | Ruby     | Roda                 | 7,537         | 22,6137        | 2.12ms      |
 
 ## Full ranking
@@ -42,6 +43,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Java     | Jersey               | 22,506        | 677,301        | 2.45ms      |
 | Node.JS  | Restify              | 21,296        | 641,021        | 3.27ms      |
 | Elixir   | Phoenix              | 18,624        | 559,225        | 5.90ms      |
+| Scala    | Akka HTTP            | 13,141        | 394,707        | 14.47ms     |
 | Haskell  | Happstack Lite       | 7,888         | 237,474        | 8.11ms      |
 | Ruby     | Roda                 | 7,537         | 22,6137        | 2.12ms      |
 | Ruby     | Cuba                 | 5,246         | 15,7422        | 3.04ms      |
