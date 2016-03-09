@@ -17,11 +17,11 @@ fib n = fib (n - 1) + fib (n - 2)
 | -------- |----------------------|---------------|----------------|-------------|
 | Haskell  | Apiary               | **69,056**    | **2,076,808**  | 2.33ms      |
 | Go       | Gin                  | 55,943        | 1,679,347      | **1.17ms**  |
+| Scala    | Spray                | 51,003        | 1,534,841      | 2.23ms      |
 | Java     | Spark                | 47,061        | 1,412,082      | 1.38ms      |
 | Clojure  | Compojure + HTTP Kit | 38,902        | 1,170,991      | 1.66ms      |
 | Elixir   | Sugar                | 22,813        | 685,273        | 3.83ms      |
 | Node.JS  | Express              | 22,696        | 683,177        | 3.15ms      |
-| Scala    | Akka HTTP            | 13,141        | 394,707        | 14.47ms     |
 | Ruby     | Roda                 | 7,537         | 22,6137        | 2.12ms      |
 
 ## Full ranking
@@ -32,6 +32,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Haskell  | Spock                | 57,416        | 1,724,062      | 2.57ms      |
 | Haskell  | Simple               | 56,104        | 1,684,709      | 2.70ms      |
 | Go       | Gin                  | 55,943        | 1,679,347      | **1.17ms**  |
+| Scala    | Spray                | 51,003        | 1,534,841      | 2.23ms      |
 | Haskell  | Scotty               | 50,048        | 1,502,738      | 2.90ms      |
 | Go       | Pat                  | 48,128        | 1,447,483      | 2.43ms      |
 | Java     | Spark                | 47,061        | 1,412,082      | 1.38ms      |
@@ -104,6 +105,14 @@ Alphabetical order
 | NYNY           | 3,671         | 11,0173        | 4.35ms      |
 | Sinatra        | 2,667         | 80,134         | 5.99ms      |
 | Rails          | 2,334         | 70,108         | 6.86ms      |
+
+### Scala
+
+| Framework      | Requests/sec  | Total requests | Avg Latency |
+|----------------|---------------|----------------|-------------|
+| Spray          | 51,003        | 1,534,841      | 2.23ms      |
+| Akka HTTP      | 13,141        | 394,707        | 14.47ms     |
+
 
 # Methodology
 
