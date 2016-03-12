@@ -35,6 +35,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Scala    | Spray                | 51,003        | 1,534,841      | 2.23ms      |
 | Haskell  | Scotty               | 50,048        | 1,502,738      | 2.90ms      |
 | Go       | Pat                  | 48,128        | 1,447,483      | 2.43ms      |
+| Scala    | Finatra              | 47,259        | 1,418,230      | 11.54ms     |
 | Java     | Spark                | 47,061        | 1,412,082      | 1.38ms      |
 | Go       | Gorilla              | 46,729        | 1,402,482      | 2.77ms      |
 | Clojure  | Compojure + HTTP Kit | 38,902        | 1,170,991      | 1.66ms      |
@@ -111,8 +112,8 @@ Alphabetical order
 | Framework      | Requests/sec  | Total requests | Avg Latency |
 |----------------|---------------|----------------|-------------|
 | Spray          | 51,003        | 1,534,841      | 2.23ms      |
+| Finatra        | 47,259        | 1,418,230      | 11.54ms     |
 | Akka HTTP      | 13,141        | 394,707        | 14.47ms     |
-
 
 # Methodology
 
