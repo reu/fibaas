@@ -2,13 +2,18 @@ GEM
   remote: https://rubygems.org/
   specs:
     puma (2.16.0)
+    puma (2.16.0-java)
     rack (1.6.4)
     roda (2.11.0)
       rack
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
   puma
   roda
+
+BUNDLED WITH
+   1.11.2

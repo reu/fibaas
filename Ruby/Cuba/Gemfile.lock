@@ -4,11 +4,16 @@ GEM
     cuba (3.5.0)
       rack (~> 1.6.0)
     puma (3.0.0)
+    puma (3.0.0-java)
     rack (1.6.4)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
   cuba
   puma
+
+BUNDLED WITH
+   1.11.2
