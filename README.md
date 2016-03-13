@@ -11,13 +11,13 @@ fib n = fib (n - 1) + fib (n - 2)
 
 # Results
 
-## The most performant from each language
+## Language ranking
 
 | Language | Framework            | Requests/sec  | Total requests | Avg Latency |
 | -------- |----------------------|---------------|----------------|-------------|
 | Haskell  | Apiary               | **69,056**    | **2,076,808**  | 2.33ms      |
-| Go       | Gin                  | 55,943        | 1,679,347      | **1.17ms**  |
-| Scala    | Spray                | 51,003        | 1,534,841      | 2.23ms      |
+| Scala    | Colossus             | 62,564        | 1,883,269      | **1.01ms**  |
+| Go       | Gin                  | 55,943        | 1,679,347      | 1.17ms      |
 | Java     | Spark                | 47,061        | 1,412,082      | 1.38ms      |
 | Clojure  | Compojure + HTTP Kit | 38,902        | 1,170,991      | 1.66ms      |
 | Elixir   | Sugar                | 22,813        | 685,273        | 3.83ms      |
@@ -25,14 +25,15 @@ fib n = fib (n - 1) + fib (n - 2)
 | JRuby    | Roda                 | 21,572        | 647,576        | 2.89ms      |
 | Ruby     | Roda                 | 7,537         | 22,6137        | 2.12ms      |
 
-## Full ranking
+## Framework ranking
 
 | Language | Framework            | Requests/sec  | Total requests | Avg Latency |
 | -------- |----------------------|---------------|----------------|-------------|
 | Haskell  | Apiary               | **69,056**    | **2,076,808**  | 2.33ms      |
+| Scala    | Colossus             | 62,564        | 1,883,269      | **1.01ms**  |
 | Haskell  | Spock                | 57,416        | 1,724,062      | 2.57ms      |
 | Haskell  | Simple               | 56,104        | 1,684,709      | 2.70ms      |
-| Go       | Gin                  | 55,943        | 1,679,347      | **1.17ms**  |
+| Go       | Gin                  | 55,943        | 1,679,347      | 1.17ms      |
 | Scala    | Spray                | 51,003        | 1,534,841      | 2.23ms      |
 | Haskell  | Scotty               | 50,048        | 1,502,738      | 2.90ms      |
 | Go       | Pat                  | 48,128        | 1,447,483      | 2.43ms      |
@@ -127,6 +128,7 @@ Alphabetical order
 
 | Framework      | Requests/sec  | Total requests | Avg Latency |
 |----------------|---------------|----------------|-------------|
+| Colossus       | 62,564        | 1,883,269      | 1.01ms      |
 | Spray          | 51,003        | 1,534,841      | 2.23ms      |
 | Finatra        | 47,259        | 1,418,230      | 11.54ms     |
 | Akka HTTP      | 13,141        | 394,707        | 14.47ms     |
