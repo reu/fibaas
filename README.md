@@ -41,6 +41,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Java     | Spark                | 47,061        | 1,412,082      | 1.38ms      |
 | Go       | Gorilla              | 46,729        | 1,402,482      | 2.77ms      |
 | Clojure  | Compojure + HTTP Kit | 38,902        | 1,170,991      | 1.66ms      |
+| Scala    | Scalatra             | 29,830        | 897,903        | 1.74ms      |
 | Haskell  | Snap                 | 23,756        | 715,166        | 7.11ms      |
 | Elixir   | Sugar                | 22,813        | 685,273        | 3.83ms      |
 | Node.JS  | Express              | 22,696        | 683,177        | 3.15ms      |
