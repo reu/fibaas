@@ -132,6 +132,7 @@ Alphabetical order
 | Colossus       | 62,564        | 1,883,269      | 1.01ms      |
 | Spray          | 51,003        | 1,534,841      | 2.23ms      |
 | Finatra        | 47,259        | 1,418,230      | 11.54ms     |
+| Scalatra       | 29,830        | 897,903        | 1.74ms      |
 | Akka HTTP      | 13,141        | 394,707        | 14.47ms     |
 
 # Methodology
