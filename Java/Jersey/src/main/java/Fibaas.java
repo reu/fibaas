@@ -2,7 +2,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
-import org.glassfish.jersey.jetty.JettyHttpContainerFactory;
+import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
 
 import java.io.IOException;
@@ -10,11 +10,9 @@ import java.net.URI;
 
 @Path("/")
 public class Fibaas {
-	public static final String BASE_URI = "http://localhost:4000/";
-
 	public static void main(String[] args) throws IOException {
 		final ResourceConfig rc = new ResourceConfig(Fibaas.class);
-		JettyHttpContainerFactory.createServer(URI.create(BASE_URI), rc);
+		GrizzlyHttpServerFactory.createHttpServer(URI.create("http://localhost:4000/"), rc);
 	}
 
 	@GET

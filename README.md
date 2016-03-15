@@ -42,10 +42,10 @@ fib n = fib (n - 1) + fib (n - 2)
 | Go       | Gorilla              | 46,729        | 1,402,482      | 2.77ms      |
 | Clojure  | Compojure + HTTP Kit | 38,902        | 1,170,991      | 1.66ms      |
 | Scala    | Scalatra             | 29,830        | 897,903        | 1.74ms      |
+| Java     | Jersey               | 27,185        | 816,312        | 3.72ms      |
 | Haskell  | Snap                 | 23,756        | 715,166        | 7.11ms      |
 | Elixir   | Sugar                | 22,813        | 685,273        | 3.83ms      |
 | Node.JS  | Express              | 22,696        | 683,177        | 3.15ms      |
-| Java     | Jersey               | 22,506        | 677,301        | 2.45ms      |
 | JRuby    | Roda                 | 21,572        | 647,576        | 2.89ms      |
 | Node.JS  | Restify              | 21,296        | 641,021        | 3.27ms      |
 | JRuby    | Cuba                 | 19,744        | 594,352        | 3.93ms      |
@@ -96,7 +96,7 @@ Alphabetical order
 | Framework      | Requests/sec  | Total requests | Avg Latency |
 |----------------|---------------|----------------|-------------|
 | Spark          | 47,061        | 1,412,082      | 1.38ms      |
-| Jersey         | 22,506        | 677,301        | 2.45ms      |
+| Jersey         | 27,185        | 816,312        | 3.72ms      |
 
 ### JRuby
 
