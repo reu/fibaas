@@ -1,0 +1,1 @@
+GET /:number controllers.Fibaas.route(number: Int)

@@ -44,6 +44,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Scala    | Scalatra             | 29,830        | 897,903        | 1.74ms      |
 | Java     | Jersey               | 27,185        | 816,312        | 3.72ms      |
 | Haskell  | Snap                 | 23,756        | 715,166        | 7.11ms      |
+| Scala    | Play                 | 23,121        | 695,310        | 3.27ms      |
 | Elixir   | Sugar                | 22,813        | 685,273        | 3.83ms      |
 | Node.JS  | Express              | 22,696        | 683,177        | 3.15ms      |
 | JRuby    | Roda                 | 21,572        | 647,576        | 2.89ms      |
@@ -133,6 +134,7 @@ Alphabetical order
 | Spray          | 51,003        | 1,534,841      | 2.23ms      |
 | Finatra        | 47,259        | 1,418,230      | 11.54ms     |
 | Scalatra       | 29,830        | 897,903        | 1.74ms      |
+| Play           | 23,121        | 695,310        | 3.27ms      |
 | Akka HTTP      | 13,141        | 394,707        | 14.47ms     |
 
 # Methodology
