@@ -38,6 +38,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Haskell  | Scotty               | 50,048        | 1,502,738      | 2.90ms      |
 | Go       | Pat                  | 48,128        | 1,447,483      | 2.43ms      |
 | Scala    | Finatra              | 47,259        | 1,418,230      | 11.54ms     |
+| Scala    | Finch                | 47,117        | 1,413,699      | 10.60ms     |
 | Java     | Spark                | 47,061        | 1,412,082      | 1.38ms      |
 | Go       | Gorilla              | 46,729        | 1,402,482      | 2.77ms      |
 | Clojure  | Compojure + HTTP Kit | 38,902        | 1,170,991      | 1.66ms      |
@@ -133,6 +134,7 @@ Alphabetical order
 | Colossus       | 62,564        | 1,883,269      | 1.01ms      |
 | Spray          | 51,003        | 1,534,841      | 2.23ms      |
 | Finatra        | 47,259        | 1,418,230      | 11.54ms     |
+| Finch          | 47,117        | 1,413,699      | 10.60ms     |
 | Scalatra       | 29,830        | 897,903        | 1.74ms      |
 | Play           | 23,121        | 695,310        | 3.27ms      |
 | Akka HTTP      | 13,141        | 394,707        | 14.47ms     |
