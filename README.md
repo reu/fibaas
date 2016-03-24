@@ -33,6 +33,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Scala    | Colossus             | 62,564        | 1,883,269      | **1.01ms**  |
 | Haskell  | Spock                | 57,416        | 1,724,062      | 2.57ms      |
 | Haskell  | Simple               | 56,104        | 1,684,709      | 2.70ms      |
+| Scala    | http4s               | 55,982        | 1,680,049      | 1.98ms      |
 | Go       | Gin                  | 55,943        | 1,679,347      | 1.17ms      |
 | Scala    | Spray                | 51,003        | 1,534,841      | 2.23ms      |
 | Haskell  | Scotty               | 50,048        | 1,502,738      | 2.90ms      |
@@ -132,6 +133,7 @@ Alphabetical order
 | Framework      | Requests/sec  | Total requests | Avg Latency |
 |----------------|---------------|----------------|-------------|
 | Colossus       | 62,564        | 1,883,269      | 1.01ms      |
+| http4s         | 55,982        | 1,680,049      | 1.98ms      |
 | Spray          | 51,003        | 1,534,841      | 2.23ms      |
 | Finatra        | 47,259        | 1,418,230      | 11.54ms     |
 | Finch          | 47,117        | 1,413,699      | 10.60ms     |
