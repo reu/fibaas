@@ -1,0 +1,14 @@
+{
+  "name": "hapi-benchmark",
+  "version": "1.0.0",
+  "description": "Hapi Fibonacci benchmark",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Rodrigo Navarro <rnavarro@rnavarro.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^13.2.1"
+  }
+}

@@ -63,6 +63,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Haskell  | Happstack Lite       | 7,888         | 237,474        | 8.11ms      |
 | Ruby     | Roda                 | 7,537         | 22,6137        | 2.12ms      |
 | JRuby    | Rails                | 7,302         | 219,187        | 12.70ms     |
+| Node.JS  | Hapi                 | 6,121         | 183,882        | 10.82ms     |
 | Ruby     | Cuba                 | 5,246         | 15,7422        | 3.04ms      |
 | Ruby     | NYNY                 | 3,671         | 11,0173        | 4.35ms      |
 | Ruby     | Sinatra              | 2,667         | 80,134         | 5.99ms      |
@@ -129,6 +130,7 @@ Alphabetical order
 | Express        | 22,696        | 683,177        | 3.15ms      |
 | Restify        | 21,296        | 641,021        | 3.27ms      |
 | Koa            | 13,787        | 413,737        | 5.00ms      |
+| Hapi           | 6,121         | 183,882        | 10.82ms     |
 
 ### Ruby
 
