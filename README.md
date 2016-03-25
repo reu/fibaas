@@ -24,6 +24,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Elixir   | Sugar                | 22,813        | 685,273        | 3.83ms      |
 | Node.JS  | Express              | 22,696        | 683,177        | 3.15ms      |
 | JRuby    | Roda                 | 21,572        | 647,576        | 2.89ms      |
+| Python   | Django               | 7,549         | 22,6516        | 8.54ms      |
 | Ruby     | Roda                 | 7,537         | 22,6137        | 2.12ms      |
 
 ## Framework ranking
@@ -61,6 +62,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | JRuby    | NYNY                 | 12,466        | 374,159        | 3.20ms      |
 | JRuby    | Sinatra              | 8,683         | 260,598        | 11.79ms     |
 | Haskell  | Happstack Lite       | 7,888         | 237,474        | 8.11ms      |
+| Python   | Django               | 7,549         | 22,6516        | 8.54ms      |
 | Ruby     | Roda                 | 7,537         | 22,6137        | 2.12ms      |
 | JRuby    | Rails                | 7,302         | 219,187        | 12.70ms     |
 | Node.JS  | Hapi                 | 6,121         | 183,882        | 10.82ms     |
@@ -131,6 +133,12 @@ Alphabetical order
 | Restify        | 21,296        | 641,021        | 3.27ms      |
 | Koa            | 13,787        | 413,737        | 5.00ms      |
 | Hapi           | 6,121         | 183,882        | 10.82ms     |
+
+### Python
+
+| Framework      | Requests/sec  | Total requests | Avg Latency |
+|----------------|---------------|----------------|-------------|
+| Django         | 7,549         | 22,6516        | 8.54ms      |
 
 ### Ruby
 
