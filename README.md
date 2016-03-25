@@ -52,6 +52,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Elixir   | Sugar                | 22,813        | 685,273        | 3.83ms      |
 | Node.JS  | Express              | 22,696        | 683,177        | 3.15ms      |
 | JRuby    | Roda                 | 21,572        | 647,576        | 2.89ms      |
+| Java     | RESTEasy             | 21,334        | 641,922        | 38.08ms     |
 | Node.JS  | Restify              | 21,296        | 641,021        | 3.27ms      |
 | JRuby    | Cuba                 | 19,744        | 594,352        | 3.93ms      |
 | Elixir   | Phoenix              | 18,624        | 559,225        | 5.90ms      |
@@ -109,6 +110,7 @@ Alphabetical order
 |----------------|---------------|----------------|-------------|
 | Spark          | 47,061        | 1,412,082      | 1.38ms      |
 | Jersey         | 27,185        | 816,312        | 3.72ms      |
+| RESTEasy       | 21,334        | 641,922        | 38.08ms     |
 
 ### JRuby
 
