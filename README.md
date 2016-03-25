@@ -25,7 +25,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Node.JS  | Express              | 22,696        | 683,177        | 3.15ms      |
 | JRuby    | Roda                 | 21,572        | 647,576        | 2.89ms      |
 | Python   | Flask                | 8,094         | 242,894        | 7.99ms      |
-| Ruby     | Roda                 | 7,537         | 22,6137        | 2.12ms      |
+| Ruby     | Roda                 | 7,537         | 226,137        | 2.12ms      |
 
 ## Framework ranking
 
@@ -67,8 +67,8 @@ fib n = fib (n - 1) + fib (n - 2)
 | Ruby     | Roda                 | 7,537         | 22,6137        | 2.12ms      |
 | JRuby    | Rails                | 7,302         | 219,187        | 12.70ms     |
 | Node.JS  | Hapi                 | 6,121         | 183,882        | 10.82ms     |
-| Ruby     | Cuba                 | 5,246         | 15,7422        | 3.04ms      |
-| Ruby     | NYNY                 | 3,671         | 11,0173        | 4.35ms      |
+| Ruby     | Cuba                 | 5,246         | 157,422        | 3.04ms      |
+| Ruby     | NYNY                 | 3,671         | 110,173        | 4.35ms      |
 | Ruby     | Sinatra              | 2,667         | 80,134         | 5.99ms      |
 | Ruby     | Rails                | 2,334         | 70,108         | 6.86ms      |
 
@@ -140,15 +140,15 @@ Alphabetical order
 | Framework      | Requests/sec  | Total requests | Avg Latency |
 |----------------|---------------|----------------|-------------|
 | Flask          | 8,094         | 242,894        | 7.99ms      |
-| Django         | 7,549         | 22,6516        | 8.54ms      |
+| Django         | 7,549         | 226,516        | 8.54ms      |
 
 ### Ruby
 
 | Framework      | Requests/sec  | Total requests | Avg Latency |
 |----------------|---------------|----------------|-------------|
-| Roda           | 7,537         | 22,6137        | 2.12ms      |
-| Cuba           | 5,246         | 15,7422        | 3.04ms      |
-| NYNY           | 3,671         | 11,0173        | 4.35ms      |
+| Roda           | 7,537         | 226,137        | 2.12ms      |
+| Cuba           | 5,246         | 157,422        | 3.04ms      |
+| NYNY           | 3,671         | 110,173        | 4.35ms      |
 | Sinatra        | 2,667         | 80,134         | 5.99ms      |
 | Rails          | 2,334         | 70,108         | 6.86ms      |
 
