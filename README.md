@@ -65,8 +65,8 @@ fib n = fib (n - 1) + fib (n - 2)
 | JRuby    | Sinatra              | 8,683         | 260,598        | 11.79ms     |
 | Python   | Flask                | 8,094         | 242,894        | 7.99ms      |
 | Haskell  | Happstack Lite       | 7,888         | 237,474        | 8.11ms      |
-| Python   | Django               | 7,549         | 22,6516        | 8.54ms      |
-| Ruby     | Roda                 | 7,537         | 22,6137        | 2.12ms      |
+| Python   | Django               | 7,549         | 226,516        | 8.54ms      |
+| Ruby     | Roda                 | 7,537         | 226,137        | 2.12ms      |
 | JRuby    | Rails                | 7,302         | 219,187        | 12.70ms     |
 | Node.JS  | Hapi                 | 6,121         | 183,882        | 10.82ms     |
 | Ruby     | Cuba                 | 5,246         | 157,422        | 3.04ms      |
