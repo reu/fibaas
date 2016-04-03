@@ -19,7 +19,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Scala    | Colossus             | 62,564        | 1,883,269      | **1.01ms**  |
 | Go       | Gin                  | 55,943        | 1,679,347      | 1.17ms      |
 | Java     | Spark                | 47,061        | 1,412,082      | 1.38ms      |
-| Clojure  | Compojure + HTTP Kit | 38,902        | 1,170,991      | 1.66ms      |
+| Clojure  | Bidi                 | 39,833        | 1,199,033      | 1.64ms      |
 | Crystal  | Kemal                | 35,497        | 1,065,103      | 1.79ms      |
 | Elixir   | Sugar                | 22,813        | 685,273        | 3.83ms      |
 | Node.JS  | Express              | 22,696        | 683,177        | 3.15ms      |
@@ -44,7 +44,8 @@ fib n = fib (n - 1) + fib (n - 2)
 | Scala    | Finch                | 47,117        | 1,413,699      | 10.60ms     |
 | Java     | Spark                | 47,061        | 1,412,082      | 1.38ms      |
 | Go       | Gorilla              | 46,729        | 1,402,482      | 2.77ms      |
-| Clojure  | Compojure + HTTP Kit | 38,902        | 1,170,991      | 1.66ms      |
+| Clojure  | Bidi                 | 39,833        | 1,199,033      | 1.64ms      |
+| Clojure  | Compojure            | 38,902        | 1,170,991      | 1.66ms      |
 | Crystal  | Kemal                | 35,497        | 1,065,103      | 1.79ms      |
 | Scala    | Scalatra             | 29,830        | 897,903        | 1.74ms      |
 | Java     | Jersey               | 27,185        | 816,312        | 3.72ms      |
@@ -77,6 +78,14 @@ fib n = fib (n - 1) + fib (n - 2)
 ## Per language ranking
 
 Alphabetical order
+
+### Clojure
+
+| Framework      | Requests/sec  | Total requests | Avg Latency |
+|----------------|---------------|----------------|-------------|
+| Bidi           | 39,833        | 1,199,033      | 1.64ms      |
+| Compojure      | 38,902        | 1,170,991      | 1.66ms      |
+
 
 ### Crystal
 
