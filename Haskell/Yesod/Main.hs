@@ -9,9 +9,9 @@ mkYesod "Fibaas" [parseRoutes|
 |]
 
 instance Yesod Fibaas where
-  makeSessionBackend _ = return Nothing
-  shouldLog _ _ _ = False
-  yesodMiddleware = id
+    makeSessionBackend _ = return Nothing
+    shouldLog _ _ _ = False
+    yesodMiddleware = id
 
 fib :: Int -> Int
 fib 0 = 0
@@ -23,5 +23,5 @@ getFibR number = return . pack . show $ fib number
 
 main :: IO ()
 main = do
-  app <- toWaiAppPlain Fibaas
-  run 4000 $ app
+    app <- toWaiAppPlain Fibaas
+    run 4000 $ app

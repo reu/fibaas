@@ -8,6 +8,6 @@ fib n = fib (n - 1) + fib (n - 2)
 
 main :: IO ()
 main = scotty 4000 $
-  get "/:number" $ do
-    number <- param "number"
-    text . pack . show . fib $ number
+    get "/:number" $ do
+        number <- param "number"
+        text . pack . show $ fib number

@@ -11,7 +11,7 @@ fib n = fib (n - 1) + fib (n - 2)
 
 main :: IO ()
 main = run 4000 $ controllerApp () $
-  get "/:number" $ do
-    param <- queryParam' "number"
-    let number = read $ unpack param :: Int in
-      respond $ ok "text/plain" $ pack . show . fib $ number
+    get "/:number" $ do
+        param <- queryParam' "number"
+        let number = read $ unpack param :: Int in
+            respond $ ok "text/plain" $ pack . show $ fib number

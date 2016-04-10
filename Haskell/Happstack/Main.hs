@@ -7,7 +7,7 @@ fib n = fib (n - 1) + fib (n - 2)
 
 main :: IO ()
 main = do
-  let config = defaultServerConfig { port = 4000 }
-  serve (Just config) $
-    path $ \(number) ->
-      ok . toResponse . show . fib $ number
+    let config = defaultServerConfig { port = 4000 }
+    serve (Just config) $
+        path $ \(number) ->
+            ok . toResponse . show $ fib number
