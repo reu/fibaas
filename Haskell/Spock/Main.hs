@@ -1,3 +1,5 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 import Web.Spock.Simple
 import Data.Text (pack)
 

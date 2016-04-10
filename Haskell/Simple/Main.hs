@@ -1,3 +1,5 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 import Web.Simple
 import Web.Frank
 import Network.Wai.Handler.Warp

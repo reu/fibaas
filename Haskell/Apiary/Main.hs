@@ -1,3 +1,6 @@
+{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE QuasiQuotes #-}
+
 import Web.Apiary
 import Network.Wai.Handler.Warp
 

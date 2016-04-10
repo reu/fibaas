@@ -10,7 +10,6 @@ cabal-version:       >=1.10
 executable fibaas-simple
   main-is:             Main.hs
   default-language:    Haskell2010
-  default-extensions:  OverloadedStrings
   ghc-options:         -Wall -O2 -threaded -rtsopts "-with-rtsopts=-N -A4M"
   build-depends:       base,
                        bytestring,

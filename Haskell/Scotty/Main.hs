@@ -1,3 +1,5 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 import Web.Scotty
 import Data.Text.Lazy (pack)
 

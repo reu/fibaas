@@ -1,3 +1,5 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 import Snap.Core
 import Snap.Http.Server
 import Data.ByteString.Char8 (pack, unpack)
