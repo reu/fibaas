@@ -37,6 +37,7 @@ fib n = fib (n - 1) + fib (n - 2)
 | Haskell  | Simple               | 56,104        | 1,684,709      | 2.70ms      |
 | Scala    | http4s               | 55,982        | 1,680,049      | 1.98ms      |
 | Go       | Gin                  | 55,943        | 1,679,347      | 1.17ms      |
+| Haskell  | Yesod                | 55,090        | 1,653,803      | 1.80ms      |
 | Scala    | Spray                | 51,003        | 1,534,841      | 2.23ms      |
 | Haskell  | Scotty               | 50,048        | 1,502,738      | 2.90ms      |
 | Go       | Pat                  | 48,128        | 1,447,483      | 2.43ms      |
@@ -115,6 +116,7 @@ Alphabetical order
 | Apiary         | 69,056        | 2,076,808      | 2.33ms      |
 | Spock          | 57,416        | 1,724,062      | 2.57ms      |
 | Simple         | 56,104        | 1,684,709      | 2.70ms      |
+| Yesod          | 55,090        | 1,653,803      | 1.80ms      |
 | Scotty         | 50,048        | 1,502,738      | 2.90ms      |
 | Snap           | 23,756        | 715,166        | 7.11ms      |
 | Happstack Lite | 7,888         | 237,474        | 8.11ms      |
