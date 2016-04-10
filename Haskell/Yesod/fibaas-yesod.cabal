@@ -18,6 +18,6 @@ executable fibaas-yesod
   ghc-options:         -Wall -O2 -threaded -rtsopts "-with-rtsopts=-N -A4M"
   build-depends:       base,
                        text,
-                       yesod,
+                       yesod==1.4.2.1,
                        yesod-core,
                        warp
