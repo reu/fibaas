@@ -23,5 +23,5 @@ object Main extends App {
     }
 
 
-  Http().bindAndHandle(router, "localhost", 4000)
+  Http().bindAndHandle(router, "0.0.0.0", 4000)
 }
