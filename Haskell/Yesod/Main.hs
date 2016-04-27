@@ -30,4 +30,4 @@ getFibR number = return . pack . show $ fib number
 main :: IO ()
 main = do
     app <- toWaiAppPlain Fibaas
-    run 4000 $ app
+    run 4000 app
