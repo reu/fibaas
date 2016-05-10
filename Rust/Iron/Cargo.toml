@@ -1,0 +1,8 @@
+[package]
+name = "Iron"
+version = "0.1.0"
+authors = ["Wagner Amaral <wamaral@wamaral.org>"]
+
+[dependencies]
+iron = "*"
+router = "*"
