@@ -1,25 +1,31 @@
-var cluster = require("cluster");
+const cluster = require("cluster");
 
 if (cluster.isMaster) {
-  var cpus = require("os").cpus().length;
-  for (var i = 0; i < cpus; i++) cluster.fork();
+  require("os")
+    .cpus()
+    .forEach(() => cluster.fork());
 } else {
-  var koa = require("koa");
-  var route = require("koa-route");
+  const Koa = require("koa");
+  const route = require("koa-route");
 
-  var app = koa();
+  const app = new Koa();
 
   function fib(n) {
     switch (n) {
-      case 0: return 0
-      case 1: return 1
-      default: return fib(n - 1) + fib(n - 2);
+      case 0:
+        return 0;
+      case 1:
+        return 1;
+      default:
+        return fib(n - 1) + fib(n - 2);
     }
   }
 
-  app.use(route.get("/:number", function *(number) {
-    this.body = fib(number);
-  }));
+  app.use(
+    route.get("/:number", (ctx, number) => {
+      ctx.body = fib(number).toString();
+    }),
+  );
 
   app.listen(4000);
 }

@@ -9,6 +9,9 @@
   "author": "Rodrigo Navarro <rnavarro@rnavarro.com.br>",
   "license": "MIT",
   "dependencies": {
-    "hapi": "^13.2.1"
+    "@hapi/hapi": "^21.3.2"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
   }
 }

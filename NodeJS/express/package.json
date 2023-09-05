@@ -1,5 +1,5 @@
 {
-  "name": "express-benchmark",
+  "name": "@fibaas/express",
   "version": "1.0.0",
   "description": "Express.JS Fibonacci benchmark",
   "main": "index.js",
@@ -9,6 +9,9 @@
   "author": "Rodrigo Navarro <rnavarro@rnavarro.com.br>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
   }
 }

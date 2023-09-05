@@ -1,28 +1,34 @@
-var cluster = require("cluster");
+const cluster = require("cluster");
 
 if (cluster.isMaster) {
-  var cpus = require("os").cpus().length;
-  for (var i = 0; i < cpus; i++) cluster.fork();
+  require("os")
+    .cpus()
+    .forEach(() => cluster.fork());
 } else {
-  var hapi = require("hapi");
-  var server = new hapi.Server();
+  const Hapi = require("@hapi/hapi");
+
+  const server = Hapi.server({
+    port: 4000,
+    host: "localhost",
+  });
 
   function fib(n) {
     switch (n) {
-      case 0: return 0
-      case 1: return 1
-      default: return fib(n - 1) + fib(n - 2);
+      case 0:
+        return 0;
+      case 1:
+        return 1;
+      default:
+        return fib(n - 1) + fib(n - 2);
     }
   }
-
-  server.connection({ port: 4000 });
 
   server.route({
     method: "GET",
     path: "/{number}",
-    handler: function(request, reply) {
-      return reply(fib(request.params.number));
-    }
+    handler: req => {
+      return fib(req.params.number);
+    },
   });
 
   server.start();

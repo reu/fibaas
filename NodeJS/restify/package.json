@@ -1,5 +1,5 @@
 {
-  "name": "express-benchmark",
+  "name": "@fibaas/restify",
   "version": "1.0.0",
   "description": "Express.JS Fibonacci benchmark",
   "main": "index.js",
@@ -9,6 +9,9 @@
   "author": "Rodrigo Navarro <rnavarro@rnavarro.com.br>",
   "license": "MIT",
   "dependencies": {
-    "restify": "^4.0.4"
+    "restify": "^11.1.0"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
   }
 }
