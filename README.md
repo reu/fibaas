@@ -11,6 +11,8 @@ fib n = fib (n - 1) + fib (n - 2)
 
 # Results
 
+**THIS WAS DONE A CENTURY AGO AND WITHOUT ANY RIGOROUS METHODOLOGY, PLEASE DISCONSIDER**
+
 ## Language ranking
 
 | Language | Framework            | Requests/sec  | Total requests | Avg Latency  |
