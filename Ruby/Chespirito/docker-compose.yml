@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  ruby:
+    build:
+      context: .
+      target: base
+    volumes:
+      - .:/app
+      - rubygems:/usr/local/bundle
+    environment:
+      - THREAD_POOL=0:5
+        #- WEB_CONCURRENCY=4
+    working_dir: /app
+    command: rackup
+    ports: 
+      - 4000:4000
+volumes:
+  rubygems:
