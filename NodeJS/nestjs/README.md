@@ -19,27 +19,13 @@ $ yarn run start:dev
 $ yarn run start:prod
 ```
 
-### Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
 ### Benchmark
-Benchmark it with:
+
 ```bash
 wrk -c 64 -d 30s http://localhost:4000/10
 ```
 
 ### Docker
-You can also build an image and run it with something like:
 
 ```bash
 docker build -t fibaas:1.0.0 .
