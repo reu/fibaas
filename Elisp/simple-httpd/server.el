@@ -1,6 +1,7 @@
 (add-to-list 'load-path "./packages")
 (require 'simple-httpd)
 
+(setq httpd-host "0.0.0.0")
 (setq httpd-port 4000)
 
 (defun fib (n)
